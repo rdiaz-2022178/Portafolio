@@ -87,7 +87,7 @@ export const search = async(req, res)=>{
         //Buscar
         let animals = await Animal.find(
             {name: search}
-        ).populate('keeper', ['name', 'phone'])
+        ).populate('keeper', ['name'])
         //Validar la respuesta
         if(!animals) return res.status(404).send({message: 'Animals not found'})
         //Responder si todo sale bien
