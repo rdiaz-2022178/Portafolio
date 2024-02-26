@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ahorcado</title>
+</head>
+
+<body>
+    <center><h1>ahorcado</h1></center>
+
+    <center><canvas id="myCanvas" width="600" height="350"></canvas></center>
+
+    <div class="teclado" >
+        <div class="row">
+            <button id="teclaQ" onclick="obtenerLetra('Q')">Q</button>
+            <button id="teclaW" onclick="obtenerLetra('W')">W</button>
+            <button id="teclaE" onclick="obtenerLetra('E')">E</button>
+            <button id="teclaR" onclick="obtenerLetra('R')">R</button>
+            <button id="teclaT" onclick="obtenerLetra('T')">T</button>
+            <button id="teclaY" onclick="obtenerLetra('Y')">Y</button>
+            <button id="teclaU" onclick="obtenerLetra('U')">U</button>
+            <button id="teclaI" onclick="obtenerLetra('I')">I</button>
+            <button id="teclaO" onclick="obtenerLetra('O')">O</button>
+            <button id="teclaP" onclick="obtenerLetra('P')">P</button>
+        </div>
+        <div class="row">
+            <button id="teclaA" onclick="obtenerLetra('A')">A</button>
+            <button id="teclaS" onclick="obtenerLetra('S')">S</button>
+            <button id="teclaD" onclick="obtenerLetra('D')">D</button>
+            <button id="teclaF" onclick="obtenerLetra('F')">F</button>
+            <button id="teclaG" onclick="obtenerLetra('G')">G</button>
+            <button id="teclaH" onclick="obtenerLetra('H')">H</button>
+            <button id="teclaJ" onclick="obtenerLetra('J')">J</button>
+            <button id="teclaK" onclick="obtenerLetra('K')">K</button>
+            <button id="teclaL" onclick="obtenerLetra('L')">L</button>
+            <button id="teclaÑ" onclick="obtenerLetra('Ñ')">Ñ</button>
+        </div>
+        <div class="row">
+            <button id="teclaZ" onclick="obtenerLetra('Z')">Z</button>
+            <button id="teclaX" onclick="obtenerLetra('X')">X</button>
+            <button id="teclaC" onclick="obtenerLetra('C')">C</button>
+            <button id="teclaV" onclick="obtenerLetra('V')">V</button>
+            <button id="teclaB" onclick="obtenerLetra('B')">B</button>
+            <button id="teclaN" onclick="obtenerLetra('N')">N</button>
+            <button id="teclaM" onclick="obtenerLetra('M')">M</button>
+
+        </div>
+        <br>
+        <div class="row">
+            <button class="iniciar" onclick="iniciarJuego()">INICIAR</button>
+        </div>
+
+
+    </div>
+</body>
+<script src="/js/main.js"></script>
+<script src="/js/canvas.js"></script>
+
+</html>
