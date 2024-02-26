@@ -34,7 +34,7 @@ export const save = async(req, res)=>{
         if(dateAppointment) return res.status(404).send({message: 'Date already exist'})
         //Guardar
         let appointment = new Appointment(data)
-        await appointment.save()
+        await appointment.save() .$and
         return res.send({message: `Appointment saved successfully, for the date ${appointment.date}`})
     }catch(err){
         console.error(err)
